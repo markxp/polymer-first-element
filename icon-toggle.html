@@ -1,0 +1,57 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../iron-icon/iron-icon.html">
+<link rel="import" href="../iron-icons/iron-icons.html">
+<link rel="import" href="../polymer/lib/utils/gestures.html">
+
+
+<dom-module id="icon-toggle">
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+      }
+      iron-icon {
+        fill: var(--icon-toggle-color, rgba(0,0,0,0));
+        stroke: var(--icon-toggle-color,currentcolor);
+      }
+      :host([pressed]) iron-icon {
+        fill: var(--icon-toggle-color,currentcolor);
+      }
+    </style>
+    <iron-icon icon="[[icon]]" on-click="toggle"></iron-icon>
+  </template>
+
+  <script>
+    /**
+     * `icon-toggle`
+     * an icon can be toggled
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class IconToggle extends Polymer.Element {
+      static get is() { return 'icon-toggle'; }
+      static get properties() {
+        return {
+          icon: {
+            type: String,
+            value: "polymer"
+          },
+          pressed: {
+            type: Boolean,
+            value: false,
+            notify: true,
+            reflectToAttribute: true
+          }
+        };
+      }
+
+      toggle() {
+        this.pressed = !this.pressed;
+      }
+    }
+
+    window.customElements.define(IconToggle.is, IconToggle);
+  </script>
+</dom-module>
