@@ -11,6 +11,7 @@
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../icon-toggle.html">
+    <link rel="import" href="../../iron-icons/iron-icons.html">
 
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
@@ -37,6 +38,21 @@
           <icon-toggle icon="star"></icon-toggle>
           <icon-toggle pressed icon="star"></icon-toggle>
 
+          <icon-toggle icon="favorite"></icon-toggle>
+          <icon-toggle pressed icon="favorite"></icon-toggle>
+        </template>
+      </demo-snippet>
+      <h3>custom style</h3>
+      <demo-snippet>
+        <template>
+          <style>
+            :host {
+              font-family: sans-serif;
+              --icon-toggle-color: lightgrey;
+              --icon-toggle-outline-color: black;
+              --icon-toggle-pressed-color: red;
+            }
+          </style>
           <icon-toggle icon="favorite"></icon-toggle>
           <icon-toggle pressed icon="favorite"></icon-toggle>
         </template>
