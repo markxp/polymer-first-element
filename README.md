@@ -1,4 +1,3 @@
-#
 # codeLabs polymer-first-element transport
 
 move to polymer 2 toolsets.
