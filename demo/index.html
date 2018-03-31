@@ -45,18 +45,17 @@
       <h3>custom style</h3>
       <demo-snippet>
         <template>
-          <style>
-            :host {
-              font-family: sans-serif;
-              --icon-toggle-color: lightgrey;
-              --icon-toggle-outline-color: black;
-              --icon-toggle-pressed-color: red;
-            }
-          </style>
           <icon-toggle icon="favorite"></icon-toggle>
           <icon-toggle pressed icon="favorite"></icon-toggle>
         </template>
       </demo-snippet>
     </div>
+    <style>
+      body {
+        --icon-toggle-color: lightgrey;
+        --icon-toggle-outline-color: black;
+        --icon-toggle-pressed-color: red;
+      }
+    </style>
   </body>
 </html>
