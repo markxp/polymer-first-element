@@ -1,6 +1,6 @@
 # codeLabs polymer-first-element transport
 
-Here's original codelab.
+Here's original [codelab](https://codelabs.developers.google.com/codelabs/polymer-first-elements/index.html).
 Move to polymer 3 and lit-element as base element.
 use polymer serve to view "reusable components"
 
