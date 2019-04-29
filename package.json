@@ -1,7 +1,8 @@
 {
-  "name": "polymer-first-element",
-  "main": "polymer-first-element.js",
+  "name": "icon-toggle",
+  "main": "icon-toggle.js",
   "dependencies": {
+    "@polymer/iron-icons": "^3.0.1",
     "@polymer/marked-element": "^3.0.1",
     "@polymer/polymer": "^3.0.0",
     "lit-element": "^2.1.0"
