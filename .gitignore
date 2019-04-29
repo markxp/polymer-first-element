@@ -1,4 +1,1 @@
-bower_components/**
-test/**
-polymer.json
-
+/node_modules/

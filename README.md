@@ -1,17 +1,21 @@
-# codeLabs polymer-first-element transport
+# \<polymer-first-element\>
 
-Here's original [codelab](https://codelabs.developers.google.com/codelabs/polymer-first-elements/index.html?).
 
-Move to polymer 2 toolsets.
 
-use `polymer serve` to view "reusable components"
+## Install the Polymer-CLI
 
-## \<icon-toggle\>
+First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) and npm (packaged with [Node.js](https://nodejs.org)) installed. Run `npm install` to install your element's dependencies, then run `polymer serve` to serve your element locally.
 
-an icon can be toggled
+## Viewing Your Element
 
-Note that in the element we build, we import polymer's base element from "../polymer/polymer-element.html".
-Which means when our element be installed, it will be seated on "bower_components/xxx/ooo.html",
-and polymer library is also seated on "bower_components/polymer/polymer-element.html".
+```
+$ polymer serve
+```
 
-The working directory is xxx.
+## Running Tests
+
+```
+$ polymer test
+```
+
+Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
