@@ -1,18 +1,23 @@
-# \<polymer-first-element\>
+# codeLabs polymer-first-element transport
+
+Here's original codelab.
+Move to polymer 3 and lit-element as base element.
+use polymer serve to view "reusable components"
+
+## \<polymer-first-element\>
 
 
-
-## Install the Polymer-CLI
+### Install the Polymer-CLI
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) and npm (packaged with [Node.js](https://nodejs.org)) installed. Run `npm install` to install your element's dependencies, then run `polymer serve` to serve your element locally.
 
-## Viewing Your Element
+### Viewing Your Element
 
 ```
 $ polymer serve
 ```
 
-## Running Tests
+### Running Tests
 
 ```
 $ polymer test
